@@ -1,15 +1,12 @@
 {
-  "name": "zz(3)",
+  "name": "zz4-student-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Student management API for assignment 4",
+  "main": "app4.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app4.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "license": "MIT",
   "dependencies": {
     "express": "^5.3.0"
   }
