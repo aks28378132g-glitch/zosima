@@ -1,13 +1,12 @@
 const express = require('express');
-const studentRoutes = require('./routes/studentRoutes');
+const studentRoutes = require('./studentRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-
 app.use('/students', studentRoutes);
 
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server listening on port ${port}`);
 });
